@@ -701,6 +701,7 @@ const competitionMessage = async (msgType, newBurner = '') => {
             msg += `<b>🔥 CURRENT MIN BURN:</b> ${gCompInfo.curMinBurn} ${tokenLink}\n`;
             msg += `<b>⏰ COUNTDOWN:</b> ${hours} hours remaining\n`;
             msg += `<b>🏆 PRIZE:</b> ${gCompInfo.prizeAmount} BUSD\n\n`;
+            msg += `<b>🎁 NFT:</b> The 3 last burners will WIN a <a href="https://opensea.io/collection/singularity-bblp/overview"><b>limited edition NFT</b></a>\n\n`;
             msg += `<b>🎁 AIRDROP:</b> Every participant will receive an airdrop of our next token launch\n\n`;
             msg += `🔼 Every hour, the minimum burn required increases by ${gCompInfo.incBurn} ${tokenLink}\n`;
             msg += `🔄 Every new burn resets the countdown to ${pDays > 0 ? pDays + ` days ` : ``}${pHours > 0 ? pHours + ` hours ` : ``}${pMinutes > 0 ? pMinutes + ` minutes ` : ``}${pSeconds > 0 ? pSeconds + ` seconds ` : ``}\n`;
@@ -711,6 +712,7 @@ const competitionMessage = async (msgType, newBurner = '') => {
             msg += `<b>🔥 CURRENT MIN BURN:</b> ${gCompInfo.curMinBurn} ${tokenLink}\n`;
             msg += `<b>⏰ COUNTDOWN:</b> ${hours} hours remaining\n`;
             msg += `<b>🏆 PRIZE:</b> ${gCompInfo.prizeAmount} BUSD\n\n`;
+            msg += `<b>🎁 NFT:</b> The 3 last burners will WIN a <a href="https://opensea.io/collection/singularity-bblp/overview"><b>limited edition NFT</b></a>\n\n`;
             msg += `<b>🎁 AIRDROP:</b> Every participant will receive an airdrop of our next token launch\n\n`;
             msg += `🔼 Every hour, the minimum burn required increases by ${gCompInfo.incBurn} ${tokenLink}\n`;
             msg += `🔄 Every new burn resets the countdown to ${pDays > 0 ? pDays + ` days ` : ``}${pHours > 0 ? pHours + ` hours ` : ``}${pMinutes > 0 ? pMinutes + ` minutes ` : ``}${pSeconds > 0 ? pSeconds + ` seconds ` : ``}\n`;
@@ -723,6 +725,7 @@ const competitionMessage = async (msgType, newBurner = '') => {
             msg += `<b>🔥 CURRENT MIN BURN:</b> ${gCompInfo.curMinBurn} ${tokenLink}\n`;
             msg += `<b>⏰ COUNTDOWN:</b> ${hours} hours remaining\n`;
             msg += `<b>🏆 PRIZE:</b> ${gCompInfo.prizeAmount} BUSD\n\n`;
+            msg += `<b>🎁 NFT:</b> The 3 last burners will WIN a <a href="https://opensea.io/collection/singularity-bblp/overview"><b>limited edition NFT</b></a>\n\n`;
             msg += `<b>🎁 AIRDROP:</b> Every participant will receive an airdrop of our next token launch\n\n`;
             msg += `🔼 Every hour, the minimum burn required increases by ${gCompInfo.incBurn} ${tokenLink}\n`;
             msg += `🔄 Every new burn resets the countdown to ${pDays > 0 ? pDays + ` days ` : ``}${pHours > 0 ? pHours + ` hours ` : ``}${pMinutes > 0 ? pMinutes + ` minutes ` : ``}${pSeconds > 0 ? pSeconds + ` seconds ` : ``}\n`;
@@ -733,7 +736,8 @@ const competitionMessage = async (msgType, newBurner = '') => {
             msg += `<b>🏆 WINNER:</b> <a href="${CHAIN_BSC.chainScan}/address/${gCompInfo.winner}">${gCompInfo.winner.substring(0, 5)}...${gCompInfo.winner.substring(36)}</a>\n`;
             msg += `<b>🤑 PRIZE:</b> ${gCompInfo.prizeAmount} BUSD\n`;
             msg += `<b>🔥 TOTAL ${tokenLink} BURNED:</b> ${gCompInfo.totalBurn}\n\n`;
-            msg += `🎁 AIRDROP RECEIPIENTS: As a token of our appreciation every participant of this competition will receive an airdrop of the next token we launch.\n\n`;
+            msg += `<b>🎁 NFT:</b> The 3 last burners have WON a <a href="https://opensea.io/collection/singularity-bblp/overview"><b>limited edition NFT</b></a>\n\n`;
+            msg += `<b>🎁 AIRDROP RECEIPIENTS:</b> As a token of our appreciation every participant of this competition will receive an airdrop of the next token we launch.\n\n`;
 
             for (let i = 0; i < gCompInfo.airdrop.length; i++) {
                 msg += `<a href="${CHAIN_BSC.chainScan}/address/${gCompInfo.airdrop[i]}">${gCompInfo.airdrop[i]}</a>\n`;
