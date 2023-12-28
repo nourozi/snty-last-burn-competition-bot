@@ -111,8 +111,8 @@ You can forward your message to this bot, and this bot will show the chat id.
 Clone the github repo
 
 ```shell
-git clone https://github.com/nourozi/SNTY-last-burn-competition-bot.git
-cd SNTY-last-burn-competition-bot/
+git clone https://github.com/nourozi/snty-last-burn-competition-bot.git
+cd snty-last-burn-competition-bot/
 ```
 
 Config .env file.
